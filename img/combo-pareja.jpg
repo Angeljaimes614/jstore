@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Patrón de textura para mantel -->
+    <pattern id="mantelPattern" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="rotate(45)">
+      <rect width="20" height="20" fill="#ffffff" />
+      <rect width="10" height="10" fill="#f9f9f9" />
+      <rect x="10" y="10" width="10" height="10" fill="#f9f9f9" />
+    </pattern>
+    
+    <!-- Patrón de corazones -->
+    <pattern id="heartPattern" patternUnits="userSpaceOnUse" width="40" height="40">
+      <path d="M20,10 C25,0 35,0 40,10 C45,20 35,30 20,40 C5,30 -5,20 0,10 C5,0 15,0 20,10 Z" fill="#D72638" opacity="0.1" />
+    </pattern>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="600" height="400" fill="url(#bgGradient)" />
+  
+  <!-- Mantel con patrón de corazones -->
+  <rect x="75" y="150" width="450" height="200" rx="5" ry="5" fill="url(#mantelPattern)" stroke="#dddddd" stroke-width="2" />
+  <rect x="75" y="150" width="450" height="200" rx="5" ry="5" fill="url(#heartPattern)" opacity="0.5" />
+  
+  <!-- Platos -->
+  <!-- Plato 1 -->
+  <ellipse cx="200" cy="250" rx="100" ry="40" fill="#ffffff" stroke="#dddddd" stroke-width="2" />
+  
+  <!-- Plato 2 -->
+  <ellipse cx="400" cy="250" rx="100" ry="40" fill="#ffffff" stroke="#dddddd" stroke-width="2" />
+  
+  <!-- Tacos en el plato 1 -->
+  <!-- Taco 1 (Carne Asada) -->
+  <g transform="translate(-150, 0) scale(0.7)">
+    <path d="M250,180 C250,230 350,230 350,180 L350,230 C350,250 325,265 300,265 C275,265 250,250 250,230 L250,180 Z" fill="#F2D680" stroke="#E6C666" stroke-width="2" />
+    
+    <!-- Carne -->
+    <path d="M270,190 L330,190 L325,210 L275,210 Z" fill="#8B4513" stroke="#5D2906" stroke-width="1" />
+    
+    <!-- Líneas de la parrilla -->
+    <line x1="275" y1="195" x2="325" y2="195" stroke="#5D2906" stroke-width="1" />
+    <line x1="275" y1="200" x2="325" y2="200" stroke="#5D2906" stroke-width="1" />
+    <line x1="275" y1="205" x2="325" y2="205" stroke="#5D2906" stroke-width="1" />
+    
+    <!-- Cebolla -->
+    <path d="M280,185 C285,180 295,180 300,185 C305,180 315,180 320,185 C315,190 305,190 300,185 C295,190 285,190 280,185 Z" fill="#FFFFFF" opacity="0.9" />
+    
+    <!-- Cilantro -->
+    <g fill="#4CAF50">
+      <path d="M290,180 C295,175 300,178 298,183 C293,185 288,183 290,180 Z" />
+      <path d="M310,180 C315,175 320,178 318,183 C313,185 308,183 310,180 Z" />
+    </g>
+  </g>
+  
+  <!-- Taco 2 (Pollo) -->
+  <g transform="translate(-100, 0) scale(0.7)">
+    <path d="M250,180 C250,230 350,230 350,180 L350,230 C350,250 325,265 300,265 C275,265 250,250 250,230 L250,180 Z" fill="#F2D680" stroke="#E6C666" stroke-width="2" />
+    
+    <!-- Pollo -->
+    <path d="M270,190 L330,190 L325,210 L275,210 Z" fill="#F5DEB3" stroke="#DEB887" stroke-width="1" />
+    
+    <!-- Guacamole -->
+    <path d="M280,185 C290,175 310,175 320,185 C310,195 290,195 280,185 Z" fill="#4CAF50" opacity="0.9" />
+    
+    <!-- Pico de gallo -->
+    <g>
+      <circle cx="290" cy="180" r="3" fill="#FF6347" opacity="0.9" />
+      <circle cx="300" cy="178" r="3" fill="#FF6347" opacity="0.9" />
+      <circle cx="310" cy="180" r="3" fill="#FF6347" opacity="0.9" />
+      <path d="M295,182 C300,177 305,182 300,187 C295,182 300,177 295,182 Z" fill="#4CAF50" opacity="0.9" />
+    </g>
+  </g>
+  
+  <!-- Tacos en el plato 2 -->
+  <!-- Taco 3 (Pescado) -->
+  <g transform="translate(50, 0) scale(0.7)">
+    <path d="M250,180 C250,230 350,230 350,180 L350,230 C350,250 325,265 300,265 C275,265 250,250 250,230 L250,180 Z" fill="#F2D680" stroke="#E6C666" stroke-width="2" />
+    
+    <!-- Pescado empanizado -->
+    <path d="M270,190 L330,190 L325,210 L275,210 Z" fill="#F5DEB3" stroke="#DEB887" stroke-width="1" />
+    
+    <!-- Textura de empanizado -->
+    <g fill="#DEB887" opacity="0.7">
+      <circle cx="280" cy="195" r="2" />
+      <circle cx="290" cy="200" r="2" />
+      <circle cx="300" cy="195" r="2" />
+      <circle cx="310" cy="200" r="2" />
+      <circle cx="320" cy="195" r="2" />
+    </g>
+    
+    <!-- Repollo -->
+    <path d="M280,185 C285,180 295,180 300,185 C305,180 315,180 320,185 C315,190 305,190 300,185 C295,190 285,190 280,185 Z" fill="#E0E0E0" opacity="0.9" />
+    
+    <!-- Salsa -->
+    <circle cx="290" cy="180" r="3" fill="#FF5722" opacity="0.8" />
+    <circle cx="310" cy="180" r="3" fill="#FF5722" opacity="0.8" />
+  </g>
+  
+  <!-- Taco 4 (Camarón) -->
+  <g transform="translate(100, 0) scale(0.7)">
+    <path d="M250,180 C250,230 350,230 350,180 L350,230 C350,250 325,265 300,265 C275,265 250,250 250,230 L250,180 Z" fill="#F2D680" stroke="#E6C666" stroke-width="2" />
+    
+    <!-- Camarones -->
+    <g>
+      <path d="M280,195 C285,190 290,192 288,197 C283,202 278,200 280,195 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+      <path d="M300,190 C305,185 310,187 308,192 C303,197 298,195 300,190 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+      <path d="M320,195 C325,190 330,192 328,197 C323,202 318,200 320,195 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    </g>
+    
+    <!-- Aguacate -->
+    <path d="M280,185 C290,175 310,175 320,185 C310,195 290,195 280,185 Z" fill="#4CAF50" opacity="0.9" />
+    
+    <!-- Salsa -->
+    <circle cx="290" cy="180" r="3" fill="#D32F2F" opacity="0.8" />
+    <circle cx="310" cy="180" r="3" fill="#D32F2F" opacity="0.8" />
+  </g>
+  
+  <!-- Nachos compartidos en el centro -->
+  <g transform="translate(0, 30)">
+    <path d="M280,220 L300,200 L320,220" fill="#F2D680" stroke="#E6C666" stroke-width="1" />
+    <path d="M290,220 L310,195 L330,220" fill="#F2D680" stroke="#E6C666" stroke-width="1" />
+    <path d="M270,220 L290,195 L310,220" fill="#F2D680" stroke="#E6C666" stroke-width="1" />
+    
+    <!-- Queso fundido -->
+    <path d="M290,210 C300,200 320,200 330,210 C320,220 300,220 290,210 Z" fill="#FFD700" opacity="0.9" />
+    
+    <!-- Jalapeños -->
+    <ellipse cx="300" cy="205" rx="5" ry="2" fill="#4CAF50" opacity="0.9" />
+    <ellipse cx="315" cy="210" rx="5" ry="2" fill="#4CAF50" opacity="0.9" />
+  </g>
+  
+  <!-- Refrescos -->
+  <!-- Refresco 1 -->
+  <g transform="translate(-170, 0)">
+    <rect x="200" y="200" width="25" height="45" rx="2" ry="2" fill="#D32F2F" opacity="0.9" />
+    <ellipse cx="212.5" cy="200" rx="12.5" ry="4" fill="#D32F2F" opacity="0.9" />
+    <ellipse cx="212.5" cy="200" rx="10" ry="2" fill="#B71C1C" opacity="0.9" />
+    <!-- Pajita -->
+    <path d="M212.5,195 L222.5,175" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M222.5,175 L227.5,175" stroke="#FFFFFF" stroke-width="2" />
+  </g>
+  
+  <!-- Refresco 2 -->
+  <g transform="translate(170, 0)">
+    <rect x="375" y="200" width="25" height="45" rx="2" ry="2" fill="#D32F2F" opacity="0.9" />
+    <ellipse cx="387.5" cy="200" rx="12.5" ry="4" fill="#D32F2F" opacity="0.9" />
+    <ellipse cx="387.5" cy="200" rx="10" ry="2" fill="#B71C1C" opacity="0.9" />
+    <!-- Pajita -->
+    <path d="M387.5,195 L377.5,175" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M377.5,175 L372.5,175" stroke="#FFFFFF" stroke-width="2" />
+  </g>
+  
+  <!-- Corazón decorativo -->
+  <path d="M300,140 C310,125 330,125 340,140 C350,155 330,170 300,190 C270,170 250,155 260,140 C270,125 290,125 300,140 Z" fill="#D72638" opacity="0.8" />
+  
+  <!-- Sombras para dar profundidad -->
+  <ellipse cx="200" cy="290" rx="100" ry="15" fill="#000000" opacity="0.1" />
+  <ellipse cx="400" cy="290" rx="100" ry="15" fill="#000000" opacity="0.1" />
+  
+  <!-- Etiqueta de descuento -->
+  <g transform="translate(450, 100) rotate(15)">
+    <rect x="0" y="0" width="80" height="80" rx="40" ry="40" fill="#D72638" />
+    <text x="40" y="35" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFFFFF">18%</text>
+    <text x="40" y="55" font-family="Montserrat, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">OFF</text>
+  </g>
+  
+  <!-- Texto del producto -->
+  <text x="300" y="50" font-family="Montserrat, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#000000">Combo Pareja</text>
+  <text x="300" y="80" font-family="Open Sans, sans-serif" font-size="18" text-anchor="middle" fill="#666666">4 tacos + nachos con queso + 2 refrescos</text>
+  <text x="300" y="110" font-family="Montserrat, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#D72638">¡OFERTA ROMÁNTICA!</text>
+</svg>

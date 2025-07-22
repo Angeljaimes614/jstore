@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tacos JStore - Los mejores tacos de billar a un mensaje de distancia. Ordena tacos de billar premium directamente por WhatsApp.">
+    <meta property="og:title" content="Tacos JStore - Tacos de Billar Premium">
+    <meta property="og:description" content="Los mejores tacos de billar a un mensaje de distancia. Ordena ahora por WhatsApp.">
+    <meta property="og:image" content="img/banner.jpg">
+    <meta property="og:url" content="https://tacosjstore.com">
+    <title>Tacos JStore - Tacos de Billar Premium</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/ChatGPT_Image_22_jul_2025__11_33_12-removebg-preview.png" alt="Tacos JStore Logo" class="logo">
+                <h1 class="brand-name">TACOS JSTORE</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#combos">Kits</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="whatsapp-btn header-whatsapp-btn" id="header-whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Ordenar
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Los Mejores Tacos de Billar a un Mensaje de Distancia</h2>
+                <p class="hero-subtitle">Tacos de billar profesionales con la mejor calidad y precisión. Fabricados con materiales premium para un rendimiento excepcional.</p>
+                <a href="#productos" class="cta-btn">Ver Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Tacos de Billar</h2>
+            <div class="products-grid" id="products-container">
+                <!-- Los productos se cargarán dinámicamente desde script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Kits Section -->
+    <section class="combos" id="combos">
+        <div class="container">
+            <h2 class="section-title">Kits y Ofertas Especiales</h2>
+            <div class="combos-grid" id="combos-container">
+                <!-- Los kits se cargarán dinámicamente desde script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones Especiales -->
+    <section class="special-promo" id="promociones">
+        <div class="container">
+            <h2 class="section-title">Promociones Especiales</h2>
+            <div class="promo-container">
+                <div class="promo-content">
+                    <h3 class="promo-title">¡Oferta del día!</h3>
+                    <p class="promo-description">Kit Profesional Premium a precio especial</p>
+                    <div class="countdown-container">
+                        <p>Termina en:</p>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span id="hours">00</span>
+                                <span class="countdown-label">Horas</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">00</span>
+                                <span class="countdown-label">Minutos</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds">00</span>
+                                <span class="countdown-label">Segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-btn add-to-cart" data-id="promo1" data-name="Kit Profesional Premium" data-price="360000" data-img="img/tacos/combo-familiar.jpg">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="promo-image">
+                    <img src="img/tacos/combo-familiar.jpg" alt="Kit Profesional Premium">
+                    <span class="discount-badge">-20%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cómo Funciona</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="step-title">1. Elige tu taco de billar</h3>
+                    <p class="step-description">Selecciona el taco de billar que mejor se adapte a tu estilo de juego y agrégalo al carrito.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="step-title">2. Finaliza por WhatsApp</h3>
+                    <p class="step-description">Confirma tu pedido a través de WhatsApp con todos los detalles y opciones de personalización.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="step-title">3. Recibe tu taco</h3>
+                    <p class="step-description">Recibe tu taco de billar profesional en la comodidad de tu hogar o club de billar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios / Reseñas -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"El mejor taco de billar que he usado. El balance es perfecto y la precisión inigualable. El servicio por WhatsApp es súper rápido y conveniente."</p>
+                        <div class="testimonial-author">
+                            <img src="img/testimonials/client1.jpg" alt="Cliente" class="testimonial-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Carlos Rodríguez</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Compré el kit profesional para mi club de billar y la calidad es excepcional. Los tacos tienen un acabado impecable y el rendimiento es superior."</p>
+                        <div class="testimonial-author">
+                            <img src="img/testimonials/client2.jpg" alt="Cliente" class="testimonial-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Laura Martínez</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"La calidad de los materiales es notable. El taco de billar llegó en perfectas condiciones y el proceso de pedido por WhatsApp es muy sencillo."</p>
+                        <div class="testimonial-author">
+                            <img src="img/testimonials/client3.jpg" alt="Cliente" class="testimonial-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Miguel Ángel</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prev-testimonial" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" id="faq1">
+                        <h3>¿Cómo pago mi pedido?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer" id="answer1">
+                        <p>Aceptamos efectivo contra entrega, transferencias bancarias y pagos móviles. Al finalizar tu pedido por WhatsApp, te indicaremos las opciones disponibles.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" id="faq2">
+                        <h3>¿Dónde entregan los pedidos?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer" id="answer2">
+                        <p>Entregamos en toda la ciudad y zonas aledañas. El costo de envío depende de la distancia. Consulta tu zona específica al realizar tu pedido.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" id="faq3">
+                        <h3>¿Cuánto tarda en llegar mi pedido?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer" id="answer3">
+                        <p>El tiempo promedio de entrega es de 3-5 días hábiles, dependiendo de tu ubicación. Para pedidos personalizados, el tiempo puede variar. Siempre te informaremos un tiempo estimado al confirmar tu pedido.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" id="faq4">
+                        <h3>¿Se aceptan pedidos personalizados?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer" id="answer4">
+                        <p>¡Claro que sí! Ofrecemos personalización en nuestros tacos de billar, como grabados, colores específicos o materiales especiales. Simplemente indícanos tus preferencias al finalizar el pedido por WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" id="faq5">
+                        <h3>¿Qué garantía tienen los productos?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer" id="answer5">
+                        <p>Todos nuestros tacos de billar cuentan con garantía de 1 año por defectos de fabricación. Los accesorios tienen garantía de 3 meses. Consulta nuestra política de garantía para más detalles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>+57 XXX XXX XXXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="far fa-envelope"></i>
+                        <p>info@tacosjstore.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Calle Principal #123, Ciudad</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://facebook.com/tacosjstore" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/tacosjstore" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <!-- Honeypot field para protección contra spam -->
+                    <div class="form-group honeypot">
+                        <label for="website">Website</label>
+                        <input type="text" id="website" name="website">
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <div class="cart-container" id="cart-container">
+        <div class="cart-header">
+            <h3>Carrito de Compras</h3>
+            <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Los items del carrito se cargarán dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <p>Total:</p>
+                <p id="cart-total">$0</p>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">
+                <i class="fab fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Botón flotante de carrito -->
+    <button class="cart-btn" id="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </button>
+
+    <!-- Aviso de Cookies -->
+    <div class="cookie-notice" id="cookie-notice">
+        <p>Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href="#">política de cookies</a>.</p>
+        <button class="accept-cookies" id="accept-cookies">Aceptar</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/123.png" alt="Tacos JStore Logo" class="footer-logo-img">
+                    <h3 class="footer-brand">TACOS JSTORE</h3>
+                    <p class="footer-slogan">Los mejores tacos de billar a un mensaje de distancia</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#combos">Kits y Ofertas</a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Información Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Envíos</a></li>
+                        <li><a href="#">Política de Garantía</a></li>
+                        <li><a href="#">Política de Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contáctanos</h4>
+                    <p><i class="fab fa-whatsapp"></i> +57 XXX XXX XXXX</p>
+                    <p><i class="far fa-envelope"></i> info@tacosjstore.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Ciudad</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/tacosjstore" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/tacosjstore" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tacos JStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

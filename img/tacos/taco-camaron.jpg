@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="600" height="400" fill="url(#bgGradient)" />
+  
+  <!-- Plato -->
+  <ellipse cx="300" cy="320" rx="200" ry="50" fill="#ffffff" stroke="#dddddd" stroke-width="2" />
+  
+  <!-- Tortilla (base del taco) -->
+  <path d="M150,180 C150,280 450,280 450,180 L450,280 C450,320 400,350 300,350 C200,350 150,320 150,280 L150,180 Z" fill="#F2D680" stroke="#E6C666" stroke-width="2" />
+  
+  <!-- Camarones -->
+  <g>
+    <!-- Camarón 1 -->
+    <path d="M220,200 C230,190 240,195 235,205 C225,215 215,210 220,200 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <path d="M235,205 C240,200 245,205 240,210 C235,215 230,210 235,205 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <line x1="225" y1="200" x2="230" y2="210" stroke="#FFFFFF" stroke-width="1" />
+    
+    <!-- Camarón 2 -->
+    <path d="M260,195 C270,185 280,190 275,200 C265,210 255,205 260,195 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <path d="M275,200 C280,195 285,200 280,205 C275,210 270,205 275,200 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <line x1="265" y1="195" x2="270" y2="205" stroke="#FFFFFF" stroke-width="1" />
+    
+    <!-- Camarón 3 -->
+    <path d="M300,190 C310,180 320,185 315,195 C305,205 295,200 300,190 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <path d="M315,195 C320,190 325,195 320,200 C315,205 310,200 315,195 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <line x1="305" y1="190" x2="310" y2="200" stroke="#FFFFFF" stroke-width="1" />
+    
+    <!-- Camarón 4 -->
+    <path d="M340,195 C350,185 360,190 355,200 C345,210 335,205 340,195 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <path d="M355,200 C360,195 365,200 360,205 C355,210 350,205 355,200 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <line x1="345" y1="195" x2="350" y2="205" stroke="#FFFFFF" stroke-width="1" />
+    
+    <!-- Camarón 5 -->
+    <path d="M380,200 C390,190 400,195 395,205 C385,215 375,210 380,200 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <path d="M395,205 C400,200 405,205 400,210 C395,215 390,210 395,205 Z" fill="#FF6F61" stroke="#E55A4F" stroke-width="1" />
+    <line x1="385" y1="200" x2="390" y2="210" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+  
+  <!-- Aguacate -->
+  <g>
+    <path d="M230,170 C240,160 260,165 255,180 C245,190 225,185 230,170 Z" fill="#4CAF50" opacity="0.9" />
+    <path d="M290,165 C300,155 320,160 315,175 C305,185 285,180 290,165 Z" fill="#4CAF50" opacity="0.9" />
+    <path d="M350,170 C360,160 380,165 375,180 C365,190 345,185 350,170 Z" fill="#4CAF50" opacity="0.9" />
+    
+    <!-- Detalles del aguacate -->
+    <path d="M235,175 L245,180" stroke="#388E3C" stroke-width="1" />
+    <path d="M295,170 L305,175" stroke="#388E3C" stroke-width="1" />
+    <path d="M355,175 L365,180" stroke="#388E3C" stroke-width="1" />
+  </g>
+  
+  <!-- Salsa picante (gotas) -->
+  <g fill="#D32F2F" opacity="0.8">
+    <circle cx="250" cy="190" r="4" />
+    <circle cx="280" cy="185" r="5" />
+    <circle cx="310" cy="180" r="4" />
+    <circle cx="340" cy="185" r="5" />
+    <circle cx="370" cy="190" r="4" />
+    <path d="M260,220 C270,210 280,215 275,225 C265,235 255,230 260,220 Z" />
+    <path d="M320,215 C330,205 340,210 335,220 C325,230 315,225 320,215 Z" />
+    <path d="M380,220 C390,210 400,215 395,225 C385,235 375,230 380,220 Z" />
+  </g>
+  
+  <!-- Ajo (pequeños trozos) -->
+  <g fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1">
+    <circle cx="240" cy="200" r="3" />
+    <circle cx="280" cy="195" r="2" />
+    <circle cx="320" cy="200" r="3" />
+    <circle cx="360" cy="195" r="2" />
+  </g>
+  
+  <!-- Limón (rodajas) -->
+  <g>
+    <circle cx="220" cy="150" r="10" fill="#FFFF00" opacity="0.8" stroke="#E6E600" stroke-width="1" />
+    <circle cx="220" cy="150" r="8" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <circle cx="220" cy="150" r="5" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <line x1="215" y1="145" x2="225" y2="155" stroke="#FFFFFF" stroke-width="1" />
+    <line x1="215" y1="155" x2="225" y2="145" stroke="#FFFFFF" stroke-width="1" />
+    
+    <circle cx="380" cy="150" r="10" fill="#FFFF00" opacity="0.8" stroke="#E6E600" stroke-width="1" />
+    <circle cx="380" cy="150" r="8" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <circle cx="380" cy="150" r="5" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <line x1="375" y1="145" x2="385" y2="155" stroke="#FFFFFF" stroke-width="1" />
+    <line x1="375" y1="155" x2="385" y2="145" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+  
+  <!-- Cilantro -->
+  <g fill="#4CAF50">
+    <path d="M240,160 C245,155 250,158 248,163 C253,160 258,163 255,168 C250,170 245,168 240,160 Z" />
+    <path d="M300,155 C305,150 310,153 308,158 C313,155 318,158 315,163 C310,165 305,163 300,155 Z" />
+    <path d="M360,160 C365,155 370,158 368,163 C373,160 378,163 375,168 C370,170 365,168 360,160 Z" />
+  </g>
+  
+  <!-- Sombras para dar profundidad -->
+  <ellipse cx="300" cy="350" rx="180" ry="20" fill="#000000" opacity="0.1" />
+  
+  <!-- Texto del producto -->
+  <text x="300" y="50" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#000000">Taco de Camarón</text>
+  <text x="300" y="80" font-family="Open Sans, sans-serif" font-size="16" text-anchor="middle" fill="#666666">Con aguacate y salsa picante</text>
+</svg>

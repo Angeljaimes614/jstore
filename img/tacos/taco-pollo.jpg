@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="600" height="400" fill="url(#bgGradient)" />
+  
+  <!-- Plato -->
+  <ellipse cx="300" cy="320" rx="200" ry="50" fill="#ffffff" stroke="#dddddd" stroke-width="2" />
+  
+  <!-- Tortilla (base del taco) -->
+  <path d="M150,180 C150,280 450,280 450,180 L450,280 C450,320 400,350 300,350 C200,350 150,320 150,280 L150,180 Z" fill="#F2D680" stroke="#E6C666" stroke-width="2" />
+  
+  <!-- Pollo -->
+  <g>
+    <!-- Piezas de pollo -->
+    <path d="M200,200 L230,190 L240,210 L220,225 L190,215 Z" fill="#F5DEB3" transform="rotate(5, 215, 205)" />
+    <path d="M250,195 L280,185 L290,205 L270,220 L240,210 Z" fill="#F5DEB3" transform="rotate(-8, 265, 200)" />
+    <path d="M300,190 L330,185 L340,205 L320,220 L290,210 Z" fill="#F5DEB3" transform="rotate(10, 315, 200)" />
+    <path d="M350,195 L380,190 L390,210 L370,225 L340,215 Z" fill="#F5DEB3" transform="rotate(-5, 365, 205)" />
+    
+    <!-- Marcas de cocción -->
+    <line x1="210" y1="195" x2="225" y2="210" stroke="#E6C666" stroke-width="2" />
+    <line x1="260" y1="190" x2="275" y2="210" stroke="#E6C666" stroke-width="2" />
+    <line x1="310" y1="195" x2="325" y2="215" stroke="#E6C666" stroke-width="2" />
+    <line x1="360" y1="200" x2="375" y2="220" stroke="#E6C666" stroke-width="2" />
+  </g>
+  
+  <!-- Guacamole -->
+  <g>
+    <path d="M220,180 C230,170 250,175 245,190 C235,200 215,195 220,180 Z" fill="#4CAF50" opacity="0.9" />
+    <path d="M280,175 C290,165 310,170 305,185 C295,195 275,190 280,175 Z" fill="#4CAF50" opacity="0.9" />
+    <path d="M340,180 C350,170 370,175 365,190 C355,200 335,195 340,180 Z" fill="#4CAF50" opacity="0.9" />
+  </g>
+  
+  <!-- Pico de gallo -->
+  <g>
+    <!-- Tomate -->
+    <circle cx="230" cy="170" r="6" fill="#D72638" />
+    <circle cx="260" cy="165" r="5" fill="#D72638" />
+    <circle cx="290" cy="170" r="7" fill="#D72638" />
+    <circle cx="320" cy="165" r="6" fill="#D72638" />
+    <circle cx="350" cy="170" r="5" fill="#D72638" />
+    
+    <!-- Cebolla -->
+    <circle cx="240" cy="175" r="4" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="1" />
+    <circle cx="270" cy="170" r="5" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="1" />
+    <circle cx="300" cy="175" r="4" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="1" />
+    <circle cx="330" cy="170" r="5" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="1" />
+    <circle cx="360" cy="175" r="4" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="1" />
+    
+    <!-- Cilantro -->
+    <path d="M250,160 C255,155 260,158 258,163 C263,160 268,163 265,168 C260,170 255,168 250,160 Z" fill="#4CAF50" />
+    <path d="M310,155 C315,150 320,153 318,158 C323,155 328,158 325,163 C320,165 315,163 310,155 Z" fill="#4CAF50" />
+    <path d="M370,160 C375,155 380,158 378,163 C383,160 388,163 385,168 C380,170 375,168 370,160 Z" fill="#4CAF50" />
+  </g>
+  
+  <!-- Sombras para dar profundidad -->
+  <ellipse cx="300" cy="350" rx="180" ry="20" fill="#000000" opacity="0.1" />
+  
+  <!-- Texto del producto -->
+  <text x="300" y="50" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#000000">Taco de Pollo</text>
+  <text x="300" y="80" font-family="Open Sans, sans-serif" font-size="16" text-anchor="middle" fill="#666666">Con guacamole y pico de gallo</text>
+</svg>

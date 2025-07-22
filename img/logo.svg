@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="100" fill="#000000"/>
+  
+  <!-- Taco (forma semicircular) -->
+  <path d="M40,70 C40,120 160,120 160,70 L160,130 C160,150 140,170 100,170 C60,170 40,150 40,130 L40,70 Z" fill="#FFD700"/>
+  
+  <!-- Detalles del taco (ingredientes) -->
+  <path d="M60,80 C60,100 140,100 140,80" stroke="#D72638" stroke-width="5" fill="none"/>
+  <path d="M70,95 C70,110 130,110 130,95" stroke="#D72638" stroke-width="5" fill="none"/>
+  
+  <!-- Letra J -->
+  <path d="M100,40 L120,40 L120,80 C120,90 110,100 100,100 C90,100 80,90 80,80" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Texto TACOS JSTORE en círculo -->
+  <path id="textPath" d="M100,25 A75,75 0 1,1 99.9,25" fill="none"/>
+  <text font-family="Montserrat, sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF" text-anchor="middle">
+    <textPath href="#textPath" startOffset="50%">TACOS JSTORE</textPath>
+  </text>
+</svg>
