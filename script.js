@@ -709,9 +709,22 @@ function setupContactForm() {
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
             
-            // Aquí normalmente enviarías los datos a un servidor
-            // Para este ejemplo, solo mostraremos un mensaje de éxito
-            alert(`¡Gracias ${name}! Tu mensaje ha sido enviado correctamente. Te responderemos pronto.`);
+            // Preparar mensaje para WhatsApp
+            let whatsappMessage = `*Mensaje de Contacto - Tacos JStore*\n\n`;
+            whatsappMessage += `*Nombre:* ${name}\n`;
+            whatsappMessage += `*Email:* ${email}\n`;
+            whatsappMessage += `*Mensaje:*\n${message}\n\n`;
+            
+            // Codificar mensaje para URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Número de WhatsApp (usar el mismo que está configurado para el checkout)
+            const phoneNumber = "573142673051";
+            
+            // Abrir WhatsApp con el mensaje
+            window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`, '_blank');
+            
+            // Resetear el formulario
             contactForm.reset();
         });
     }

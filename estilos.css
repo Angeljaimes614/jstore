@@ -800,18 +800,23 @@ section {
 }
 
 .submit-btn {
-    background-color: var(--color-black);
+    background-color: var(--color-red);
     color: var(--color-white);
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: 600;
     align-self: flex-start;
     transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .submit-btn:hover {
-    background-color: var(--color-gold);
-    color: var(--color-black);
+    background-color: #c01f2d;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 /* Cart Styles */
